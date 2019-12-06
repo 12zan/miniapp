@@ -1,5 +1,7 @@
 # 十二赞小程序全套源代码
 
+十二赞团队投放了数百万人民币，开发了本套小程序系统 。后端代码主要是php构成，有少量的java\python\golang.前端全部是微信小程序原生，自定义装修部分也是全原生实现。
+
 1. 十二赞小程序 全部版本。功能齐全，架构可扩展，支持千万级访问毫无压力。
 2. 接下来，我会把十二赞旗下的全部小程序的源代码整理、开放出来。陆陆续续整理中。
 3. 有时候因为要删掉一些敏感信息，保障现在十二赞的客户的信息安全，所以进展会慢一点，请大家耐心等待。也有可能删的内容影响到了现有小程序的运行，需要自己修改一下，请多多理解。
@@ -54,27 +56,27 @@
 
 ![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/47090800.8654.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/47090800.8654.png)
 ![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/26057000.8998.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/26057000.8998.png)
-![https://cdn.withpush.cn/opensource/IMG_4821.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4821.PNG)
-![https://cdn.withpush.cn/opensource/IMG_4822.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4822.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4821.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4821.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4822.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4822.PNG)
 
 
 2. 生成分享图
-![https://cdn.withpush.cn/opensource/IMG_4818.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4818.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4818.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4818.PNG)
 
 3.扫码买单
-![https://cdn.withpush.cn/opensource/IMG_4820.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4820.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4820.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4820.PNG)
 
 4. 拼团
-![https://cdn.withpush.cn/opensource/IMG_4817.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4817.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4817.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4817.PNG)
 
 5.限时折扣
-![https://cdn.withpush.cn/opensource/IMG_4815.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4815.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4815.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4815.PNG)
 
 6.积分
-![https://cdn.withpush.cn/opensource/IMG_4814.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4814.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4814.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4814.PNG)
 
 7. 裂变红包
-![https://cdn.withpush.cn/opensource/IMG_4813.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4813.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4813.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4813.PNG)
 
 8. 返利
 - ![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/13969000.9229.png]()
