@@ -1,0 +1,50 @@
+/* pages/balanceList/balanceList.wxss */
+
+page {
+    background: #f3f3f3;
+}
+.paddings{
+    padding-left:20rpx;
+    padding-right: 20rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+.title {
+    width: 100%;
+    height: 72rpx;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    color: #131313;
+    line-height: 72rpx;
+    font-weight: 500;
+    margin-top: 20rpx;
+ 
+    border-bottom: 2rpx solid #f4f4f4;
+}
+.title text:nth-of-type(2){
+  color: #F6186A;
+}
+.card{
+    padding: 30rpx 0 30rpx 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 158rpx;
+      display: flex;
+      background: #fff;
+    justify-content: space-between;
+     border-bottom: 2rpx solid #f4f4f4;
+}
+.zx{
+    font-size: 30rpx;
+    color: #131313;
+}
+.qian{
+    font-size: 30rpx;
+color: #F6186A;
+line-height: 98rpx;
+}
+.font-color{
+    color: #0EC788;
+}

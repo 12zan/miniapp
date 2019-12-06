@@ -1,0 +1,47 @@
+<!--pages/rechargeRes/rechargeRes.wxml-->
+<view wx:if='{{payRes == 1}}'>
+    <view class='payRes'>
+        <image src='../../images/right.png' class='icon-success'></image>
+        <view class='title'>充值成功</view>
+        <view class='tip'>{{totalPrice}}元已存入余额</view>
+    </view>
+    <button class='btn' bindtap='toMy'>返回</button>
+    <view class='activity' wx:if='{{isShow}}'>
+        <view class='stage'>已获得以下赠品：</view>
+        <view class='notice'>赠送的储值金额请进入余额明细查看，赠送的服务请进入订单页查看。</view>
+        <view wx:for='{{list.recharge}}'>
+            <view class='activityContent' wx:for='{{item.gifts}}'>
+                <view  wx:if='{{item.type == 1}}' style='display:flex'>
+                    <view class='big' >
+                        <view class='picleft'>
+                            <image src='../../images/recharge.png' class='icon-recharge'></image>
+                            <view class='des'>储值金额</view>
+                        </view>
+                        <view class='priceright'>¥{{item.price}}</view>
+                    </view>
+                    <view class='small'>x1</view>
+                </view>
+          
+            <view class='activityContent' wx:if='{{item.type == 2}}'>
+                <view class='diff'>
+                    <image src='{{item.services.cover.image.path}}' class='icon-recharge'></image>
+                    <view class='others'>
+                        <view class='des'>{{item.services.name}}</view>
+                        <view class='pricebottom '>¥{{item.services.price}}</view>
+                    </view>
+                </view>
+                <view class='small'>x{{item.num}}</view>
+            </view>
+              </view>
+        </view>
+        <view class='null'></view>
+    </view>
+</view>
+<view wx:if='{{payRes == 2}}'>
+    <view class='payRes'>
+        <image src='../../images/fail.png' class='icon-success'></image>
+        <view class='title'>充值失败</view>
+        <view class='tip'>充值失败，请重新充值！</view>
+    </view>
+    <button bindtap='toBack' class='btn'>返回</button>
+</view>

@@ -1,0 +1,71 @@
+
+page {
+    background: #eee;
+}
+
+.result {
+    width: 100%;
+    text-align: center;
+    margin-top: 140rpx;
+}
+
+.icon-success {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.title {
+    margin-top: 20rpx;
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.tip {
+    font-size: 13px;
+    margin-top: 20rpx;
+    color: #858585;
+}
+.againBtn{
+    width: 412rpx;
+    height: 100rpx;
+    background: #f6186a;
+    border-radius: 4rpx;
+    margin-top: 160rpx;
+    color: #fff;
+    font-weight: 500;
+    line-height: 100rpx;
+    margin-bottom: 100rpx;
+}
+.backBtn{
+    border: 2rpx solid #F6186A;
+    border-radius: 4rpx;
+    background: none;
+        width: 412rpx;
+        line-height: 100rpx;
+    height: 100rpx;
+    color: #F6186A;
+
+}
+button{
+    border: none;
+    border-radius: 0
+}
+.againBtn::after{
+    border: none;
+     border-radius: 0
+}
+.backBtn::after{
+    border: none;
+     border-radius: 0
+}
+.btn {
+    width: 412rpx;
+    height: 100rpx;
+    background: #f6186a;
+    border-radius: 4rpx;
+    margin-top: 100rpx;
+    color: #fff;
+    font-weight: 500;
+    line-height: 100rpx;
+}

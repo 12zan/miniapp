@@ -1,0 +1,31 @@
+<!--pages/order/order.wxml-->
+<view wx:if='{{isOrder == 1}}'>
+    <view class='card' wx:for='{{list}}' wx:key='{{index}}' bindtap='toOrderDetails' data-id='{{item.id}}'>
+        <view class='status'>
+            <text>下单时间：{{item.paid_at}}</text>
+            <text class='{{item.status_s != "待使用" ? "fontColor":"checkColor"}}'>{{item.status_s}}</text>
+        </view>
+        <view class='content'>
+            <view class='left'>
+                <image src='{{item.servers.image}}' class='leftImg'></image>
+            </view>
+            <view class='right'>
+                <view class='top'>{{item.servers.name}}</view>
+                <view class='bottom'>
+                    <text>×{{item.servers.count}}</text>
+                    <text>¥{{item.servers.server_price}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='payRes'>
+            <text>{{item.extro_info.payMethod_s}}</text>
+            <text wx:if='{{item.type == "0303"}}'>实付：¥0</text>
+            <text wx:else>实付：¥{{item.settlement_amount}}</text>
+        </view>
+    </view>
+    <view class='null'></view>
+</view>
+<view wx:if='{{isOrder == 0}}' class='empty'>
+    <image src='../../images/empty.png' class='icon-empty'></image>
+    <view>您还没有订单呢！</view>
+</view>

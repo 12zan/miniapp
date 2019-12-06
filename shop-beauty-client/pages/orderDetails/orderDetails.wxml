@@ -1,0 +1,78 @@
+<!--pages/orderDetails/orderDetails.wxml-->
+<!-- 购物服务 -->
+<view class='detailsTop'>
+    <view class='left'>
+        <image src='{{details.servers.image}}' class='leftImg'></image>
+    </view>
+    <view class='right'>
+        <view class='top'>{{details.servers.name}}</view>
+        <view class='bottom'>
+            <text>×{{details.servers.count}}</text>
+            <text>¥{{details.servers.server_price}}</text>
+        </view>
+    </view>
+</view>
+<!-- 优惠券 -->
+<view class='coupon'>
+    <view class='box'>
+        <view class='title'>兑换券</view>
+    </view>
+    <view class='couponCode' wx:for='{{details.servers.infos}}' wx:key='{{index}}'>
+        <view class="{{item.status != 1 ? 'used':'qrCode'}}">
+            <view class='qrCodeImg' style="background-image: url({{item.code_s}});background-size: 100% 100%">
+            </view>
+        </view>
+        <view class='tips' wx:if='{{item.status == 1}}'>兑换券未使用，请及时到店使用！</view>
+        <view class='tips' wx:if='{{item.status == -1}}'>兑换券已使用</view>
+        <view class='tips' wx:if='{{item.status == -2}}'>订单已退款，兑换券自动失效。</view>
+        <view class='useTime' wx:if='{{item.used_at && item.status == -1}}'>使用时间:{{item.used_at}}</view>
+        <image src='../../images/user.png' class='icon-use' wx:if='{{item.status == -1}}'></image>
+        <image src='../../images/invalid.png' class='icon-invalid' wx:if='{{item.status == -2}}'></image>
+    </view>
+</view>
+<!-- 服务须知 -->
+<view class='serviceNotice'>
+    <view class='tab'>
+        <view class=" tabLeft {{currentTab == 0 ? 'active' : ''}}" bindtap='tabLeft'>服务内容</view>
+        <view class=" tabRight {{currentTab == 1 ? 'active' : ''}}" bindtap='tabRight'>购买须知</view>
+    </view>
+    <view class='tabContent' wx:if='{{currentTab == 0}}'>
+        <view class='item' wx:for='{{details.servers.details}}' wx:key='{{index}}'>
+            <view class='itemContent'>
+                <view>{{item.name}}</view>
+                <view>{{item.num}}</view>
+                <view>¥{{item.price}}</view>
+            </view>
+        </view>
+    </view>
+    <view class='tabContent' wx:if='{{currentTab == 1}}'>
+        <view class='box' wx:if='{{details.servers.info != ""}}'>
+            <view class='noticeItem' wx:for='{{details.servers.info}}' wx:key='{{index}}' >
+                <view class='noticeItemContent'>
+                    <view class='top'>{{item.name}}</view>
+                    <view class='bottom'>{{item.content}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 订单信息 -->
+<view class='orderInfo'>
+    <view class='price'>实付金额：{{details.pay_amount}}元</view>
+    <view class='number'>
+        <text>订单编号：</text>
+        <text>{{details.order_sn}}</text>
+    </view>
+    <view class='number'>
+        <text>下单时间：</text>
+        <text>{{details.paid_at}}</text>
+    </view>
+    <view class='number'>
+        <text>手机号码：</text>
+        <text>{{details.extro_info.phone}}</text>
+    </view>
+    <view class='number'>
+        <text>支付方式：</text>
+        <text>{{details.extro_info.payMethod_s}}</text>
+    </view>
+</view>

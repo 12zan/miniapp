@@ -1,0 +1,15 @@
+<!--pages/verificationRes/verificationRes.wxml-->
+<!-- 核销结果页 -->
+<view class='result' wx:if='{{isOk == 2}}'>
+    <image src='../../images/fail.png' class='icon-success'></image>
+    <view class='title'>核销失败</view>
+    <view class='tip'>该兑换券已使用或失效！</view>
+    <button class='againBtn' bindtap='toScaven'>重新扫描二维码</button>
+    <button class='backBtn' bindtap='toBusiness'>返回</button>
+</view>
+<view class='result' wx:if='{{isOk == 1}}'>
+    <image src='../../images/right.png' class='icon-success'></image>
+    <view class='title'>核销成功</view>
+    <view class='tip'>已成功核销一张兑换券。</view>
+    <button class='btn'  bindtap='toBusiness'>返回</button>
+</view>

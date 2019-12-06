@@ -1,0 +1,57 @@
+<!--pages/serviceDetails/serviceDetails.wxml-->
+<!-- 轮播图 -->
+<view class='paddingBottom'>
+    <swiper indicator-dots="{{indicatorDots}}" indicator-active-color='{{indicatoractivecolor}}' class='swiper' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+        <block wx:for="{{detailsData.banners}}" wx:key='{{index}}' wx:for-index="{{index}}">
+            <swiper-item class='swiper-item'>
+                <image mode="aspectFill" src="{{item.path}}" class="slide-image" width="355" height="150" bindtap='previewImage' data-url='{{item.path}}' />
+            </swiper-item>
+        </block>
+    </swiper>
+
+<view class='info'>
+    <view class='name'>{{detailsData.name}}</view>
+    <view class='des'>{{detailsData.description}}</view>
+    <view class='price'>
+        <view>¥{{detailsData.member_price}}</view>
+        <view>非会员价：¥{{detailsData.price}}</view>
+    </view>
+</view>
+<!-- <view class='interval'></view> -->
+<view class='serviceContent' wx:if='{{detailsData.details.length != 0}}'>
+    <view class='title'>服务内容</view>
+    <view class='item' wx:for='{{detailsData.details}}' wx:key='{{index}}'>
+        <view class='itemContent'>
+            <view>{{item.name}}</view>
+            <view>{{item.num}}</view>
+            <view>¥{{item.price}}</view>
+        </view>
+    </view>
+</view>
+<!-- <view class='interval'></view> -->
+<view class='noticeContent' wx:if='{{detailsData.info.length != 0}}'>
+    <view class='title'>购买须知</view>
+    <view class='noticeItem' wx:for='{{detailsData.info}}' wx:key='{{index}}'>
+        <view class='noticeItemContent'>
+            <view class='top'>{{item.name}}</view>
+            <view class='bottom'>{{item.content}}</view>
+        </view>
+    </view>
+</view>
+<!-- <view class='interval'></view> -->
+<view class='serviceInstroduce' wx:if='{{detailsData.introduce.length != 0}}'>
+    <view class='title'>服务介绍</view>
+    <!-- <view class='images' > -->
+            <image src='{{item.path}}' wx:for='{{detailsData.introduce}}' class='pictrues' bindtap='clickMe' data-url='{{item}}' data-index='{{index}}' mode='widthFix'></image> 
+    <!-- </view> -->
+</view>
+</view>
+<view class='footer'>
+    <view class='index' bindtap='toIndex'>
+        <image src="../../images/home2.png" class='icon-home'></image>
+        <view>首页</view>
+    </view>
+     <form report-submit='true' bindsubmit='formId'>
+    <button class="buy" bindtap='toSettlement' form-type='submit'>立即抢购</button>
+    </form>
+</view>

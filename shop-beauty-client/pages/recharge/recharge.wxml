@@ -1,0 +1,45 @@
+<!--pages/recharge/recharge.wxml-->
+<view class='bigBox'>
+<view class='money'>
+    <view class='top'>
+        <input type='digit' placeholder='¥' value='{{money}}' bindfocus='bindfocus' bindblur='bindblur' bindinput='bindReplaceInput' maxlength='8'></input>
+    </view>
+    <view class='nextBtn' bindtap='toRecharge'>下一步</view>
+</view>
+<view class='activity' wx:for='{{list.recharge}}' wx:key='{{index}}'>
+    <view class='stage'>单笔充值满 {{item.condition}}元，赠送：</view>
+    <view wx:for='{{item.gifts}}' wx:key='{{index}}'>
+        <view class='activityContent' wx:if='{{item.type == 1}}'>
+            <view class='big'>
+                <view class='picleft'>
+                    <image src='../../images/recharge.png' class='icon-recharge'></image>
+                    <view class='des'>储值金额</view>
+                </view>
+                <view class='priceright'>¥{{item.price}}</view>
+            </view>
+            <view class='small'>x1</view>
+        </view>
+        <view class='activityContent' wx:if='{{item.type == 2}}'>
+            <view class='diff'>
+                <image src='{{item.services.cover.image.path}}' class='icon-recharge'></image>
+                <view class='others'>
+                    <view class='des'>{{item.services.name}}</view>
+                    <view class='pricebottom '>¥{{item.services.price}}</view>
+                </view>
+            </view>
+            <view class='small'>x{{item.num}}</view>
+        </view>
+    </view>
+    <view class='null'></view>
+</view>
+</view>
+<view class='footer' bindtap='toIndex' wx:if='{{isShare}}'>
+    <view class='leftImg'>
+        <image src='{{shopInfo.logo}}' class='icon-home'></image>
+        <view>{{shopInfo.name}}</view>
+    </view>
+    <view class='rightGo'>
+        <view>进入店铺</view>
+        <image src='../../images/more.png' class='icon-more'></image>
+    </view>
+</view>

@@ -1,0 +1,110 @@
+<!--pages/index/index.wxml-->
+<view class='main'>
+    <!-- 地址 -->
+       <view class='address' bindtap='toMap' wx:if='{{isAddress == 2}}'>
+        <image src='../../images/location.png' class='icon-location'></image>
+        <view>{{indexData.shopInfo.address}}</view>
+    </view>
+  <view class='address' wx:if='{{isAddress == 1}}'>
+        <image src='../../images/location.png' class='icon-location'></image>
+        <view>{{indexData.shopInfo.address}}</view>
+    </view>
+ 
+    <!-- 轮播 -->
+    <swiper indicator-dots="{{indicatorDots}}"  indicator-active-color="{{indicatorColor}}"
+    class='swiper' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange='clickMe'>
+        <block wx:for="{{indexData.banner}}" wx:key='{{index}}' wx:for-index="{{index}}">
+            <swiper-item class='swiper-item'>
+                <image src="{{item.image.path}}" class="slide-image" width="355" height="150" bindtap='previewImage' data-url='{{item.image.path}}' />
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 营业时间和客服电话 -->
+    <view class='info'>
+        <view class='businessHours'>
+            <view class='top'>营业时间</view>
+            <view class='bottom'>{{indexData.shopInfo.openTime}}</view>
+        </view>
+        <view class='borders'></view>
+        <view class='businessHours' bindtap='toCall' data-tel='{{indexData.shopInfo.phone}}'>
+            <view class='top'>客服电话</view>
+            <view class='bottom'>{{indexData.shopInfo.phone}}</view>
+        </view>
+    </view>
+    <view class='interval'></view>
+    <official-account></official-account>
+     <view class='interval' wx:if='{{account == true}}'></view>
+    <!-- 价目表 -->
+    <view class='priceList'>
+        <view class='title'>价目表</view>
+        <view class='column' wx:for='{{priceList}}' wx:key='index'>
+            <view>{{item.name_s7}}</view>
+            <view>¥{{item.price}}</view>
+        </view>
+        <view class='more' bindtap='toLoading' wx:if='{{isPriceList == 2}}'>
+            <text>查看完整价目表</text>
+            <image src='../../images/more2.png' class='icon-down'></image>
+        </view>
+        <view class='xixi' wx:if='{{isPriceList == 1}}'>
+            <view class='column' wx:for='{{priceArray}}' wx:key='index'>
+                <view>{{item.name_s7}}</view>
+                <view>¥{{item.price}}</view>
+            </view>
+        </view>
+    </view>
+    <view class='interval'></view>
+    <!-- 发型师 -->
+    <view class='hairStylist'>
+        <view class='box' bindtap='toHairStylist'>
+            <view class='left'>发型师</view>
+            <view class='right'>
+                <text>全部</text>
+                <image src='../../images/more.png' class='icon-more'></image>
+            </view>
+        </view>
+    </view>
+    <scroll-view class='hairBox' scroll-x="{{true}}" style='width:750rpx;padding-left:40rpx;box-sizing:border-box;' bindscrolltolower='bindscrolltolower'>
+        <view class='personCard' wx:for='{{indexData.staffs}}' wx:key='index'>
+            <image src='{{item.image.path}}' class='icon-right'></image>
+            <view class='name'>{{item.name_s5}}</view>
+            <view class='nickname'>{{item.role_s7}}</view>
+        </view>
+    </scroll-view>
+    <view class='interval'></view>
+    <!-- 服务 -->
+    <view class='serviceList'>
+        <view class='title'>服务</view>
+        <view class='combination' wx:for='{{servicesList}}' wx:key='{{index}}' bindtap='toServiceDetails' data-id='{{item.id}}'>
+            <view class='left'>
+                <image src='{{item.cover.image.path}}' class='pic'></image>
+            </view>
+            <view class='right'>
+                <view> {{item.name_s16}}</view>
+                <view>{{item.description_s20}}</view>
+                <view>¥{{item.member_price}}</view>
+            </view>
+        </view>
+        <view class='more2' bindtap='loading' wx:if='{{isServiceList == 2}}'>
+            <text>查看全部服务</text>
+            <image src='../../images/more2.png' class='icon-down'></image>
+        </view>
+        <view class='haha' wx:if='{{haha == 1}}'>
+            <view class='combination' wx:for='{{array}}' wx:key='{{index}}' bindtap='toServiceDetails' data-id='{{item.id}}'>
+                <view class='left'>
+                    <image src='{{item.cover.image.path}}' class='pic'></image>
+                </view>
+                <view class='right'>
+                    <view> {{item.name_s16}}</view>
+                    <view>{{item.description_s20}}</view>
+                    <view>¥{{item.member_price}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+       <view class='copyright'>
+           <image src='../../images/logoFoot.png' class='icon-logoFoot'></image>
+            <view style='margin-top:10rpx'> 由十二赞提供技术支持 v{{version}}</view>
+        </view>
+    <image src='../../images/reserve.png' class='icon-reserve' bindtap='toAppointment' wx:if='{{isOpenStaffOrder}}'></image>
+        <image src='../../images/business.png' class='icon-business' bindtap='toBusiness' wx:if='{{isStaff}}'></image>
+</view>

@@ -1,0 +1,54 @@
+<!--pages/my/my.wxml-->
+<view class='header'>
+    <view class='cardTop'>
+        <view class='left'>
+            <image src='{{vip.wx_user.avatar}}' class='icon-pic'></image>
+            <view class='other'>
+                <view class='top'>
+                    <text>{{vip.wx_user.nickname_s7}}</text>
+                    <image src='../../images/vip.png' class='icon-vip' wx:if='{{vip.level != 0}}'></image>
+                    <text wx:if='{{vip.level != 0}}'>会员</text>
+                </view>
+                <view class='bottom'>ID：{{vip.number}}</view>
+            </view>
+        </view>
+        <view class='right'>¥{{vip.money}}</view>
+    </view>
+</view>
+<view class='cardBottom'>
+    <view class='recharge' bindtap='toRecharge'>
+        <image src='../../images/recharge1.png' class='icon-recharge'></image>
+        <view>充值</view>
+    </view>
+    <view class='centerView'>
+
+    </view>
+    <view class='QRcode' bindtap='toQRcode'>
+        <image src='../../images/code.png' class='icon-recharge'></image>
+        <view>二维码</view>
+    </view>
+</view>
+<view class='balance' bindtap='toBalanceList'>
+    <view class='box'>
+        <view>余额明细</view>
+        <image src='../../images/more.png' class='icon-right'></image>
+    </view>
+</view>
+<view class='nullView'>
+    <view></view>
+</view>
+<view class='balance' bindtap='toBusiness' wx:if='{{isStaff}}'>
+    <view class='box'>
+        <view>商家入口</view>
+        <image src='../../images/more.png' class='icon-right'></image>
+    </view>
+</view>
+<view class='nullView' wx:if='{{isStaff}}'>
+    <view></view>
+</view>
+<view class='inviting'>
+    <button class='invitingBox' open-type="share">
+        <view>邀请好友</view>
+        <image src='../../images/more.png' class='icon-right'></image>
+    </button>
+</view>

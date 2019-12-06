@@ -1,0 +1,6 @@
+<!--pages/business/business.wxml-->
+<view class='scavenging'>
+<image src='../../images/scaven.png' class='icon-scaven'></image>
+<button class='scavenBtn' bindtap='toScaven'>点击扫码</button>
+<button class='toIndex' bindtap='toIndex'>返回</button>
+</view>

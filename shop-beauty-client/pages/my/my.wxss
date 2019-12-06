@@ -1,0 +1,168 @@
+/* pages/my/my.wxss */
+
+page {
+    background: #f3f3f3;
+}
+.icon-vip{
+    width: 24rpx;
+    height: 24rpx;
+    margin-right: 6rpx;
+    margin-top: 4rpx;
+}
+.header {
+    width: 100%;
+    height: 248rpx;
+    background: #f6186a;
+    padding: 40rpx 40rpx 0 40rpx;
+    box-sizing: border-box;
+}
+
+.cardTop {
+    background-image: linear-gradient(-135deg, #25292c 0%, #191922 100%);
+    box-shadow: 0 0 24rpx 0 rgba(145, 0, 54, 0.85);
+    width: 100%;
+    height: 209rpx;
+    -moz-border-radius: 18rpx 18rpx 0 0;
+    -webkit-border-radius: 18rpx 18rpx 0 0;
+    border-radius: 18rpx 18rpx 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 54rpx 20rpx 54rpx 20rpx;
+    box-sizing: border-box;
+}
+
+.cardTop .left {
+    display: flex;
+    font-size: 24rpx;
+    color: #e5daae;
+}
+.cardTop .right {
+    font-size: 30rpx;
+    color: #e5daae;
+    font-weight: 500;
+    margin-top: 26rpx;
+    
+}
+.other {
+    padding-top: 8rpx;
+    box-sizing: border-box;
+}
+
+.other .top {
+    margin-bottom: 10rpx;
+}
+
+.other text:nth-of-type(1) {
+    font-size: 30rpx;
+    font-weight: 500;
+    margin-right: 20rpx;
+}
+
+.icon-pic {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+
+.cardBottom {
+    margin: 0 40rpx 40rpx 40rpx;
+    /* width: 670rpx; */
+    height: 200rpx;
+    background: #fff;
+    -moz-border-radius: 0 0 18rpx 18rpx;
+    -webkit-border-radius: 0 0 18rpx 18rpx;
+    border-radius: 0 0 18rpx 18rpx;
+    display: flex;
+    padding-top: 32rpx;
+    padding-bottom: 28rpx;
+    box-sizing: border-box;
+  
+}
+
+.QRcode, .recharge {
+    width: 332rpx;
+    height: 100%;
+    font-size: 30rpx;
+    color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-recharge {
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 30rpx;
+}
+
+.centerView {
+    width: 4rpx;
+    height: 140rpx;
+    background: #f3f3f3;
+}
+
+.balance {
+    width: 100%;
+    height: 100rpx;
+    background: #fff;
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+    
+}
+
+.balance .box {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    line-height: 100rpx;
+    color: #131313;
+    
+}
+.nullView{
+    width: 100%;
+    height: 2rpx;
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+.nullView view:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+}
+.icon-right {
+    width: 14rpx;
+    height: 20rpx;
+    margin-top: 36rpx;
+}
+
+.inviting {
+    width: 100%;
+    height: 100rpx;
+    background: #fff;
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+}
+
+.invitingBox {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    line-height: 100rpx;
+    color: #131313;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    padding: 0;
+}
+
+button::after{
+    border: none;
+    border-radius: 0;
+       padding: 0;
+}

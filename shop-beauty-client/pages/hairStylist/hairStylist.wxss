@@ -1,0 +1,101 @@
+/* pages/HairStylist/HairStylist.wxss */
+
+page {
+    background: #f3f3f3;
+}
+
+.topBox {
+   
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+.paddingBottom{
+     margin-bottom: 98rpx;
+        padding: 20rpx;
+    box-sizing: border-box;
+}
+.card {
+    width: 100%;
+    background: #fff;
+    border-radius: 16rpx;
+    overflow: hidden;
+    margin-bottom: 20rpx;
+}
+
+.imgs {
+    width: 100%;
+    height: 510rpx;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.introduce {
+    padding: 20rpx 40rpx 30rpx 40rpx;
+    box-sizing: border-box;
+}
+
+.introduce .top {
+    display: flex;
+    font-size: 30rpx;
+    color: #858585;
+    margin-bottom: 30rpx;
+}
+
+.introduce .top view:nth-of-type(1) {
+    color: #131313;
+    font-weight: 500;
+    margin-right: 30rpx;
+}
+
+.introduce .bottom {
+    font-size: 26rpx;
+    color: #858585;
+    line-height: 42rpx;
+    word-break: break-all;
+}
+
+.footer {
+    width: 100%;
+    height: 98rpx;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 20rpx 40rpx 20rpx 40rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftImg {
+    display: flex;
+    font-size: 30rpx;
+    color: #131313;
+}
+
+.leftImg view:nth-of-type(1) {
+    margin-top: 8rpx;
+}
+
+.icon-home {
+    width: 56rpx;
+    height: 56rpx;
+    margin-right: 20rpx;
+}
+
+.rightGo {
+    display: flex;
+    padding-top: 12rpx;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #858585;
+}
+
+.icon-more {
+    width: 14rpx;
+    height: 20rpx;
+    margin-left: 20rpx;
+    margin-top: 8rpx;
+}

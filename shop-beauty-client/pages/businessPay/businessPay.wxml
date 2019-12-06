@@ -1,0 +1,41 @@
+<!--pages/businessPay/businessPay.wxml-->
+<!--pages/settlement/settlement.wxml-->
+<!-- 套餐组合 -->
+<view class='category'>
+    <view class='left'>
+        <image src='{{exchangeData.userInfo.wx_user.avatar}}' class='categoryImg'></image>
+    </view>
+    <view class='right'>
+        <view class='top'>
+        <view>{{exchangeData.userInfo.wx_user.nickname}}</view>
+       
+            <view wx:if='{{exchangeData.userInfo.level == 0}}' class='noVip'>非会员</view>
+            <image wx:if='{{exchangeData.userInfo.level != 0}}' src='../../images/vip.png' class='icon-vip'></image>
+            <view wx:if='{{exchangeData.userInfo.level != 0}}'>会员</view>
+            
+             </view>
+        <view class='bottom'>
+            <view>ID：{{exchangeData.userInfo.number}}</view>
+        </view>
+    </view>
+</view>
+<!-- 支付方式 -->
+<view class='payStyle'>
+    <view class='title'>兑换券信息</view>
+    <view class='balance'>
+        <text>服务名称</text>
+        <text>{{exchangeData.serviceName}}</text>
+    </view>
+      <view class='balance'>
+        <text>服务价格</text>
+        <text>¥{{exchangeData.servicePrice}}</text>
+    </view>
+       <view class='balance'>
+        <text>支付方式</text>
+        <text>{{exchangeData.payMethod_s}}</text>
+    </view>
+</view>
+
+<view class='footer' bindtap='toPay'>
+    <view>确认核销</view>
+</view>

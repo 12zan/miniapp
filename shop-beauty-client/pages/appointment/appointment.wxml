@@ -1,0 +1,77 @@
+<!--pages/appointment/appointment.wxml-->
+<!-- 头像 -->
+<view class='headPic'>
+    <image class="headImg" src='{{vip.wx_user.avatar}}'></image>
+    <view>{{vip.wx_user.nickName}}</view>
+</view>
+<!-- 表单 -->
+<view class='tel'>
+    <input type='number' placeholder='手机号' placeholder-class='telphone' value='{{telphone}}' bindblur='changeNum' maxlength='11' class='telphone' bindinput='bindinput' placeholder='请输入手机号'></input>
+    <button  open-type="getPhoneNumber" class='have' bindgetphonenumber="getPhoneNumber">获取手机号</button>
+</view>
+<!-- <view class='time'> -->
+ <form report-submit='true' bindsubmit='formId'>
+<button class='time' bindtap='toCheckDate' form-type='submit'>
+    <view class="left" wx:if='{{isShow == 0}}'>预约到店时间</view>
+    <view class="left" wx:if='{{isShow == 1}}'>{{chooseDate}}</view>
+    <view class='icon'>
+        <image src="../../images/more.png" class="icon-right"></image>
+    </view>
+</button>
+</form>
+<!-- </view> -->
+ <form report-submit='true' bindsubmit='formId'>
+<button class='time' bindtap='toCheckOne'>
+    <view class="left" wx:if='{{isChoose == 0}}'>选择发型师</view>
+    <view class="left" wx:if='{{isChoose == 1}}'>{{name}}</view>
+    <view class='icon'>
+        <image src="../../images/more.png" class="icon-right"></image>
+    </view>
+</button>
+</form>
+<view class='submit'>
+    <form report-submit='true' bindsubmit='formId'>
+        <button bindtap='toSubmit'>提 交</button>
+    </form>
+</view>
+<view wx:if='{{isTime == 1}}'>
+    <view class='mask_layer' bindtap='cancel' />
+    <view class='box'>
+        <view class='title'>
+            <text bindtap='cancel'>取消</text>
+            <text bindtap='sure'>确定</text>
+        </view>
+        <picker-view class='picker-view' indicator-style="height: 78rpx;" style="width: 100%;padding-left:40rpx;padding-right:40rpx;box-sizing:border-box;" value="{{value}}" bindchange="bindChange">
+            <picker-view-column >
+                <view wx:for="{{arr}}" wx:key='{{index}}' style="line-height: 78rpx;text-align:center;font-size:34rpx;color:#171717;height:78rpx;" >{{item}}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view wx:for="{{time}}" wx:key='{{index}}' style="line-height: 78rpx;text-align:center;font-size:34rpx;color:#171717;height:78rpx;">{{item}}</view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+</view>
+<view wx:if='{{isWho == 1}}'>
+    <view class='mask_layer' bindtap='cancel' />
+    <view class='box1'>
+        <view class='title'>
+            <text bindtap='cancel'>取消</text>
+            <text bindtap='sure1'>确定</text>
+        </view>
+        <picker-view class='picker-view' indicator-style="height: 60rpx;" style="width: 100%;padding-left:40rpx;padding-right:40rpx;box-sizing:border-box;" value="{{value}}" bindchange="bindChangeOne">
+            <picker-view-column>
+                <view wx:for="{{array}}" wx:key='{{index}}' style="line-height:78rpx;text-align:center;font-size:34rpx;color:#171717;height:78rpx;">{{item}}</view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+</view>
+<view class='footer' bindtap='toIndex' wx:if='{{isShare}}'>
+    <view class='leftImg'>
+        <image src='{{shopInfo.logo}}' class='icon-home'></image>
+        <view>{{shopInfo.name}}</view>
+    </view>
+    <view class='rightGo'>
+        <view>进入店铺</view>
+        <image src='../../images/more.png' class='icon-more'></image>
+    </view>
+</view>

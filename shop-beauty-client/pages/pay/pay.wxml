@@ -1,0 +1,15 @@
+<!--pages/pay/pay.wxml-->
+<!--pages/reservationRes/reservationRes.wxml-->
+<view class='payRes' wx:if='{{payRes == 1}}'>
+    <image src='../../images/right.png' class='icon-success'></image>
+    <view class='title'>支付成功</view>
+    <view class='tip'>已支付{{totalPrice}}元</view>
+    <button class='btn' bindtap='toOrderDetails'>查看订单详情</button>
+</view>
+<view class='payRes' wx:if='{{payRes == 2}}'>
+    <image src='../../images/fail.png' class='icon-success'></image>
+    <view class='title'>支付失败</view>
+    <view class='tip'>{{tips}}</view>
+    <button class='btn' bindtap='toPre'>返回</button>
+
+</view>

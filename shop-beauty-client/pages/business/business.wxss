@@ -1,0 +1,45 @@
+/* pages/business/business.wxss */
+
+page {
+    background: #f3f3f3;
+}
+
+.scavenging {
+    text-align: center;
+}
+
+.icon-scaven {
+    width: 280rpx;
+    height: 280rpx;
+    margin-top: 260rpx;
+    margin-bottom: 206rpx;
+}
+
+.scavenBtn {
+    width: 412rpx;
+    height: 100rpx;
+    background: #f6186a;
+    border-radius: 4rpx;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 34rpx;
+    color: #fff;
+    font-weight: 500;
+}
+
+.toIndex {
+    width: 412rpx;
+    height: 100rpx;
+    background: none;
+    border-radius: 4rpx;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 34rpx;
+    color: #f6186a;
+    font-weight: 500;
+    margin-top: 60rpx;
+    border: 2rpx solid #f6186a;
+}
+button::after{
+   border: none
+}

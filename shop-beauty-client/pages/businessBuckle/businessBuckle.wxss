@@ -1,0 +1,125 @@
+/* pages/businessBuckle/businessBuckle.wxss */
+
+page {
+    background: #f3f3f3;
+}
+
+.category {
+    margin-top: 20rpx;
+    width: 100%;
+    height: 160rpx;
+    background: #fff;
+    padding: 20rpx 0 20rpx 20rpx;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.category .left {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 4rpx;
+    margin-right: 24rpx;
+}
+
+.icon-vip {
+    width: 24rpx;
+    height: 24rpx;
+    margin-right: 6rpx;
+    margin-top: 8rpx;
+}
+
+.categoryImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 4rpx;
+}
+
+.category .right {
+    padding-top: 20rpx;
+    padding-bottom: 22rpx;
+    box-sizing: border-box;
+    width: 544rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category .right .info .top {
+    font-size: 30rpx;
+    color: #131313;
+    margin-bottom: 12rpx;
+    display: flex;
+}
+
+.category .right .info .bottom {
+    /* display: flex; */
+    font-size: 24rpx;
+    color: #858585;
+}
+
+.category .right .info .top view:nth-of-type(1) {
+    margin-right: 20rpx;
+}
+
+.category .right .info .top view:nth-of-type(2) {
+    line-height: 44rpx;
+    font-size: 24rpx;
+    color: #f3ca24;
+    font-weight: 500;
+}
+
+.recharge {
+    font-size: 34rpx;
+    color: #f6186a;
+    font-weight: 500;
+    line-height: 88rpx;
+}
+.buckle{
+    margin: 50rpx 50rpx 0 50rpx;
+    width: 650rpx;
+    height: 788rpx;
+    background: #fff;
+    padding: 72rpx 72rpx 0 72rpx;
+    box-sizing: border-box;
+    border-radius: 16rpx;
+    font-size: 30rpx;
+    color: #151515;
+    
+}
+.buckle input{
+    margin-top: 106rpx;
+    width: 482rpx;
+    height: 66rpx;
+    font-size: 48rpx;
+    color: #858585;
+    text-align: center;
+    margin-left: 8rpx;
+
+}
+.borders{
+    width: 500rpx;
+    height: 16rpx;
+    border: 4rpx solid #f4f4f4;
+    border-top: none;
+    margin-left: 2rpx;
+}
+.footer {
+    width: 416rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 34rpx;
+    color: #fff;
+    font-weight: 500;
+    background: #f6186a;
+    text-align: center;
+    margin-top: 196rpx;
+    margin-left: 50rpx;
+  
+}
+
+.footer text:nth-of-type(1) {
+    margin-right: 40rpx;
+}
+.nothing{
+    background: #858585;
+    
+}

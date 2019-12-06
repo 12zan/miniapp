@@ -1,0 +1,179 @@
+/* pages/recharge/recharge.wxss */
+
+page {
+    background: #f3f3f3;
+}
+
+.money {
+    margin: 40rpx;
+    width: 670rpx;
+    height: 392rpx;
+    background: #fff;
+    border-radius: 16rpx;
+    padding: 40rpx;
+    box-sizing: border-box;
+}
+
+.money .top {
+    width: 100%;
+    height: 132rpx;
+    font-size: 48rpx;
+    color: #858585;
+    display: flex;
+    border-bottom: 2rpx solid #c2c2c2;
+}
+
+.money .top input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 132rpx;
+}
+
+.nextBtn {
+    width: 412rpx;
+    height: 100rpx;
+    background: #f6186a;
+    border-radius: 4rpx;
+    font-size: 34rpx;
+    color: #fff;
+    line-height: 100rpx;
+    text-align: center;
+    margin: 76rpx auto;
+}
+
+.activity {
+    padding: 20rpx 40rpx 20rpx 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+
+.stage {
+    font-size: 30rpx;
+    color: #131313;
+    margin-bottom: 40rpx;
+}
+
+.activityContent {
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.diff {
+    width: 522rpx;
+    height: 100%;
+    border: 2rpx solid #d6d6d6;
+    border-radius: 4rpx 4rpx 0 4rpx 4rpx;
+    border-right: none;
+    padding: 20rpx 38rpx 20rpx 20rpx;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.big {
+    width: 522rpx;
+    height: 100%;
+    border: 2rpx solid #d6d6d6;
+    border-radius: 4rpx 4rpx 0 4rpx 4rpx;
+    border-right: none;
+    padding: 20rpx 38rpx 20rpx 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small {
+    width: 150rpx;
+    height: 146rpx;
+    text-align: center;
+    border: 2rpx dashed #d6d6d6;
+    border-radius: 4rpx;
+    line-height: 150rpx;
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.picleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.priceright {
+    font-size: 34rpx;
+    color: #f6186a;
+    line-height: 110rpx;
+    font-weight: 500;
+}
+
+.pricebottom {
+    font-size: 34rpx;
+    color: #f6186a;
+    font-weight: 500;
+    margin-top: 16rpx;
+}
+
+.des {
+    font-size: 30rpx;
+    color: #2d2d2d;
+}
+
+.icon-recharge {
+    width: 110rpx;
+    height: 110rpx;
+    margin-right: 20rpx;
+}
+
+.footer {
+    width: 100%;
+    height: 98rpx;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 20rpx 40rpx 20rpx 40rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftImg {
+    display: flex;
+    font-size: 30rpx;
+    color: #131313;
+}
+
+.leftImg view:nth-of-type(1) {
+    margin-top: 8rpx;
+}
+
+.icon-home {
+    width: 56rpx;
+    height: 56rpx;
+    margin-right: 20rpx;
+}
+
+.rightGo {
+    display: flex;
+    padding-top: 12rpx;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #858585;
+}
+
+.icon-more {
+    width: 14rpx;
+    height: 20rpx;
+    margin-left: 20rpx;
+    margin-top: 8rpx;
+}
+
+.bigBox {
+    padding-bottom: 98rpx;
+}
+button::after{
+    border: none;
+}

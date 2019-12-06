@@ -1,0 +1,76 @@
+<!--pages/settlement/settlement.wxml-->
+<!-- 套餐组合 -->
+<view class='category'>
+    <view class='left'>
+        <image src='{{detailsData.cover.image.path}}' class='categoryImg'></image>
+    </view>
+    <view class='right'>
+        <view class='top'>{{detailsData.name}}</view>
+        <view class='bottom'>
+            <view class=' {{(isVip== true && isStaffWxPay == true && payMethod ==2) || (isVip== true && isStaffWxPay == false) ? "vip": ""}}'>会员价：¥{{detailsData.member_price}}</view>
+            <view class='null-view'></view>
+            <view class='{{isVip== false ||(isStaffWxPay == true && isVip== true && payMethod ==1)? "vip": ""}}'>非会员价：¥{{detailsData.price}}</view>
+        </view>
+    </view>
+</view>
+<!--  -->
+<view class='unitPrice'>
+    <text>单价</text>
+    <text>¥{{price}}</text>
+</view>
+<view class='counter'>
+    <view class='box'>
+        <view>数量</view>
+        <view class='right'>
+            <view bindtap='reduce'>-</view>
+            <view>{{count}}</view>
+            <view bindtap='add'>+</view>
+        </view>
+    </view>
+</view>
+<view class='totalPrice'>
+    <view class='box1'>
+        <text>小计</text>
+        <text>¥{{totalPrice}}</text>
+    </view>
+</view>
+<!-- 支付方式 -->
+<view class='payStyle'>
+    <view class='title'>支付方式</view>
+    <view class='balance'>
+        <text>账户余额</text>
+        <text>¥{{vip.money}}</text>
+    </view>
+    <view class='style'>
+        <view>支付方式</view>
+        <view class='right'>
+            <view class='rightleft' bindtap='toChoose' >
+                <view class='circle' wx:if='{{isShow == 2}}'></view>
+                <view  wx:if='{{isShow == 1}}'><image src='../../images/true.png' class='icon-true'></image></view>
+                <view>余额支付</view>
+            </view>
+            <view class='rightright' bindtap='toCheck' >
+                <view class='circle' wx:if='{{isCheck == 2}}'></view>
+                <view  wx:if='{{isCheck == 1}}'><image src='../../images/true.png' class='icon-true'></image></view>
+                <view>微信支付</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 联系方式 -->
+<button class='tel'  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+    <view>联系方式</view>
+    <view class='obtain'>
+        <view wx:if='{{vip.phone == null}}'>获取手机号</view>
+        <view wx:else>{{vip.phone}}</view>
+        <view>
+            <image src='../../images/more.png' class='icon-obtain'></image>
+        </view>
+    </view>
+</button>
+ <form report-submit='true' bindsubmit='formId'>
+<button class='footer' bindtap='toPay'  form-type='submit'>
+    <view>去支付</view>
+    <view>¥{{totalPrice}}</view>
+</button>
+     </form>

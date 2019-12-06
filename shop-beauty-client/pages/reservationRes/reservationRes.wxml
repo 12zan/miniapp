@@ -1,0 +1,12 @@
+<!--pages/reservationRes/reservationRes.wxml-->
+<view class='result' wx:if='{{result == 1}}'>
+<image src='../../images/right.png' class='icon-success'></image>
+<view class='title'>预约成功</view>
+<view class='tip'>预约成功，请准时到店消费！</view>
+</view>
+<view class='result' wx:if='{{result == 2}}'>
+<image src='../../images/fail.png' class='icon-success'></image>
+<view class='title'>预约失败</view>
+<view class='tip'>同一用户每天最多允许预约3次！</view>
+</view>
+<button class='btn' bindtap='toIndex'>返回</button>

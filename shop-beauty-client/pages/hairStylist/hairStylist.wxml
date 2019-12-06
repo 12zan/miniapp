@@ -1,0 +1,27 @@
+<!--pages/HairStylist/HairStylist.wxml-->
+<view class=' {{isShare? "paddingBottom" :"topBox"}}' >
+    <view class='card' wx:for='{{list}}' wx:key='{{index}}'>
+        <view class='imgs'>
+            <image mode="aspectFill" src="{{item.image.path}}" class='img'></image>
+        </view>
+        <view class='introduce'>
+            <view class='top'>
+                <view>{{item.name}}</view>
+                <view>{{item.role}}</view>
+            </view>
+            <view class='bottom'>
+                {{item.intro}}
+            </view>
+        </view>
+    </view>
+</view>
+<view class='footer' bindtap='toIndex' wx:if='{{isShare}}'>
+    <view class='leftImg'>
+        <image src='{{shopInfo.logo}}' class='icon-home'></image>
+        <view>{{shopInfo.name}}</view>
+    </view>
+    <view class='rightGo'>
+        <view>进入店铺</view>
+        <image src='../../images/more.png' class='icon-more'></image>
+    </view>
+</view>

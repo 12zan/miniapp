@@ -1,0 +1,45 @@
+/* pages/pay/pay.wxss */
+/* pages/reservationRes/reservationRes.wxss */
+
+page {
+    background: #eee;
+}
+
+.payRes {
+    width: 100%;
+    text-align: center;
+    margin-top: 140rpx;
+}
+
+.icon-success {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.title {
+    margin-top: 20rpx;
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.tip {
+    font-size: 13px;
+    margin-top: 20rpx;
+    color: #858585;
+}
+
+.btn {
+    width: 412rpx;
+    height: 100rpx;
+    background: #f6186a;
+    border-radius: 4rpx;
+    margin-top: 100rpx;
+    color: #fff;
+    font-weight: 500;
+    line-height: 100rpx;
+    border: none;
+}
+button::after{
+    border: none
+}

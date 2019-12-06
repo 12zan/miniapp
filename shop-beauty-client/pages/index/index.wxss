@@ -1,0 +1,386 @@
+/* pages/index/index.wxss */
+
+page {
+    background: #f4f4f4;
+}
+
+/* 地址 */
+
+.icon-reserve {
+    width: 120rpx;
+    height: 120rpx;
+    position: fixed;
+    right: 30rpx;
+    top: 680rpx;
+    z-index: 2;
+}
+
+.address {
+    width: 100%;
+    font-size: 24rpx;
+    color: #131313;
+    display: flex;
+    padding: 14rpx 40rpx 14rpx 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.icon-location {
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 10rpx;
+}
+
+/* 轮播图 */
+
+.swiper-box {
+    width: 100%;
+    height: 400rpx;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 400rpx;
+}
+
+.swiper-item {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.account{
+    margin-bottom: 20rpx;
+}
+/* 营业时间和客服电话 */
+
+.info {
+    width: 100%;
+    height: 136rpx;
+    display: flex;
+    background: #fff;
+}
+
+.businessHours {
+    width: 374rpx;
+    height: 100%;
+    text-align: center;
+    padding: 20rpx 0 20rpx 0;
+    box-sizing: border-box;
+}
+
+.businessHours .top {
+    font-size: 30rpx;
+    color: #131313;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+
+.businessHours .bottom {
+    font-size: 24rpx;
+    color: #858585;
+}
+
+.borders {
+    width: 4rpx;
+    height: 100rpx;
+    margin-top: 18rpx;
+    background: #f4f4f4;
+}
+
+.interval {
+    width: 100%;
+    height: 20rpx;
+    background: #f3f3f3;
+}
+
+/* 价目表 */
+
+.priceList {
+    width: 100%;
+    background: #fff;
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    height: 88rpx;
+    font-size: 34rpx;
+    color: #131313;
+    text-align: center;
+    line-height: 88rpx;
+    font-weight: 500;
+   
+}
+
+.column {
+    width: 100%;
+    height: 78rpx;
+    border-top: 2rpx solid #f4f4f4;
+    /* border-bottom: 2rpx solid #f4f4f4; */
+    padding: 0 80rpx 0 80rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    color: #131313;
+    line-height: 78rpx;
+}
+
+.more {
+    width: 90%;
+    height: 158rpx;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    font-size: 30rpx;
+    color: #858585;
+    text-align: center;
+    padding-top: 100rpx;
+    box-sizing: border-box;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.94) 76%, #fff 100%);
+}
+
+.more text:nth-of-type(1) {
+    font-size: 30rpx;
+    color: #858585;
+}
+
+.xixi {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+.haha {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+/* 发型师 */
+
+.hairStylist {
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 88rpx; */
+    line-height: 88rpx;
+    background: #fff;
+    
+
+    
+}
+/* .border-bottom{
+    width: 670rpx;
+    height: 2rpx;
+    background: #f4f4f4;
+    margin-left: 40rpx;
+} */
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+     border-bottom: 2rpx solid #f4f4f4 !important;
+}
+
+.hairStylist .left {
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.hairStylist .right {
+    font-size: 30rpx;
+    color: #858585;
+}
+
+.icon-more {
+    margin-left: 24rpx;
+    width: 14rpx;
+    height: 20rpx;
+}
+
+.hairBox {
+    width:100%;
+    height: 346rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    white-space: nowrap;
+    background: #fff;
+}
+
+.personCard {
+    width: 200rpx;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20rpx;
+}
+
+.icon-right {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.name {
+    font-size: 30rpx;
+    color: #131313;
+}
+
+.nickname {
+    font-size: 24rpx;
+    color: #858585;
+}
+
+/* 服务 */
+
+.serviceList {
+    background: #fff;
+    width: 100%;
+    /* height: 886rpx; */
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    margin-bottom: 20rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.serviceList .title {
+    text-align: left;
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.combination {
+    width: 100%;
+    height: 186rpx;
+    border-top: 2rpx solid #f4f4f4;
+    /* border-bottom: 2rpx solid #f4f4f4; */
+    padding: 16rpx 0 20rpx 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.more2 {
+    position: absolute;
+    width: 90%;
+    height: 204rpx;
+    text-align: center;
+    bottom: 0;
+    padding-top: 132rpx;
+    box-sizing: border-box;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.94) 76%, #fff 100%);
+}
+
+.more2 text:nth-of-type(1) {
+    font-size: 30rpx;
+    color: #858585;
+}
+
+.icon-down {
+    width: 20rpx;
+    height: 14rpx;
+    margin-left: 14rpx;
+}
+
+.combination .left {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 4rpx;
+    margin-right: 24rpx;
+}
+
+.pic {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 4rpx;
+}
+
+.combination .right {
+    padding-top: 4rpx;
+    box-sizing: border-box;
+}
+
+.combination .right view:nth-of-type(1) {
+    font-size: 30rpx;
+    color: #131313;
+    margin-bottom: 10rpx;
+}
+
+.combination .right view:nth-of-type(2) {
+    font-size: 24rpx;
+    color: #858585;
+    margin-bottom: 18rpx;
+}
+
+.combination .right view:nth-of-type(3) {
+    font-size: 30rpx;
+    color: #f6186a;
+    font-weight: 500;
+}
+
+/* 底部导航 */
+
+.commonFooter {
+    width: 100%;
+    height: 98rpx;
+    background: #fff;
+    box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.15);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    padding: 12rpx 102rpx 8rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index {
+    height: 100%;
+    font-size: 20rpx;
+    color: #f6186a;
+    text-align: center;
+}
+
+.icon-home {
+    width: 46rpx;
+    height: 46rpx;
+}
+
+.icon-business {
+    width: 120rpx;
+    height: 120rpx;
+    position: fixed;
+    right: 30rpx;
+    top: 840rpx;
+    z-index: 2;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    color: #c8c8c8;
+    padding-bottom: 20rpx;
+    box-sizing: border-box;
+}
+.icon-logoFoot{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 20rpx;
+}

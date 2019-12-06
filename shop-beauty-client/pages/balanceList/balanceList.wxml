@@ -1,0 +1,20 @@
+<!--pages/balanceList/balanceList.wxml-->
+
+<view class='paddings'>
+<view class='title'>
+    <text>账户余额</text>
+    <text>{{vip.money}}</text>
+</view>
+<view class='card' wx:for='{{list}}' wx:key='{{index}}' bindtap='toBalanceDetails' data-id='{{item.id}}'>
+    <view class='zx'>
+        <view>{{item.code_s}}</view>
+        <view style='color:#858585;margin-top:20rpx;font-size:26rpx;'>{{item.created_at}}</view>
+    </view>
+    <view class='qian' wx:if='{{item.type == "out"}}'>
+        -{{item.money}}
+    </view>
+      <view class='qian font-color' wx:if='{{item.type == "in"}}'>
+        +{{item.money}}
+    </view>
+</view>
+</view>

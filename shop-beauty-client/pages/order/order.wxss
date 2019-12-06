@@ -1,0 +1,99 @@
+/* pages/order/order.wxss */
+
+page {
+    background: #f3f3f3;
+}
+.empty{
+    text-align: center;
+    font-size: 30rpx;
+    color: #858585;
+    margin-top: 96rpx;
+}
+.icon-empty{
+    width: 480rpx;
+    height: 480rpx;
+    margin-bottom: 20rpx;
+}
+.card {
+    margin-top: 20rpx;
+    width: 100%;
+    height: 362rpx;
+    background: #fff;
+    padding: 0 20rpx 0 20rpx;
+    box-sizing: border-box;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26rpx;
+    color: #858585;
+    height: 72rpx;
+    line-height: 72rpx;
+}
+
+
+.checkColor{
+    color: #f6186a;
+
+}
+.content {
+    width: 100%;
+    height: 190rpx;
+    padding: 16rpx 0 20rpx 0;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #f4f4f4;
+    border-top: 2rpx solid #f4f4f4;
+    display: flex;
+}
+
+.content .left {
+    width: 197rpx;
+    height: 100%;
+    border-radius: 4rpx;
+    overflow: hidden;
+}
+
+.leftImg {
+    width: 100%;
+    height: 150rpx;
+}
+
+.content .right {
+    margin-left: 20rpx;
+    width: 100%;
+    padding: 22rpx 0 20rpx 0;
+    box-sizing: border-box;
+    font-size: 30rpx;
+    color: #131313;
+}
+
+.content .right .bottom {
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .right .bottom text:nth-of-type(1) {
+    color: #858585;
+    font-size: 26rpx;
+}
+.payRes{
+    width: 100%;
+    height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #131313;
+display: flex;
+justify-content: space-between;  
+}
+.payRes text:nth-of-type(1){
+   color: #858585;
+}
+.null{
+    width: 100%;
+    height: 20rpx;
+}
+.fontColor{
+    color: #131313;
+}

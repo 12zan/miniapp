@@ -1,0 +1,271 @@
+/* pages/orderDetails/orderDetails.wxss */
+
+page {
+    background: #f4f4f4;
+}
+
+/* 
+购物服务
+ */
+
+.detailsTop {
+    width: 100%;
+    height: 190rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    background: #fff;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.detailsTop .left {
+    width: 197rpx;
+    height: 100%;
+    border-radius: 4rpx;
+    overflow: hidden;
+}
+.icon-use{
+    width: 138rpx;
+    height: 138rpx;
+    position: absolute;
+    z-index: 2;
+    right: 188rpx;
+    bottom: 114rpx;
+    transform: rotate(-30deg)
+}
+.icon-invalid{
+        width: 138rpx;
+    height: 138rpx;
+    position: absolute;
+    z-index: 2;
+    right: 188rpx;
+    bottom: 86rpx;
+    transform: rotate(-30deg)
+}
+.detailsTop .leftImg {
+    width: 100%;
+    height: 150rpx;
+}
+
+.detailsTop .right {
+    margin-left: 20rpx;
+    width: 100%;
+    padding: 22rpx 0 20rpx 0;
+    box-sizing: border-box;
+    font-size: 30rpx;
+    color: #131313;
+}
+
+.detailsTop .right .bottom {
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailsTop .right .bottom text:nth-of-type(1) {
+    color: #858585;
+    font-size: 26rpx;
+}
+
+/*
+ 二维码
+ */
+
+.coupon {
+    /* background: #fff; */
+}
+
+.coupon .title {
+
+    width: 100%;
+    height: 72rpx;
+    line-height: 72rpx;
+    background: #fff;
+    font-size: 30rpx;
+    color: #131313;
+    border-bottom: 2rpx solid #f4f4f4;
+}
+
+.coupon .box {
+    padding: 0 20rpx 0 20rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.couponCode {
+    width: 100%;
+    /* height: 460rpx; */
+    background: #fff;
+    text-align: center;
+    padding: 40rpx 0 20rpx 0;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    color: #858585;
+    position: relative;
+    margin-bottom: 20rpx;
+}
+.used{
+    width: 268rpx;
+    height: 268rpx;
+    border: 2rpx solid #d6d6d6;
+    border-radius: 6px;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 0.2;
+    
+}
+.null {
+    width: 100%;
+    height: 20rpx;
+    margin-top: 20rpx;
+    background: #f4f4f4;
+}
+
+.qrCode {
+    /* padding: 30rpx;
+    box-sizing: border-box; */
+    width: 268rpx;
+    height: 268rpx;
+    border: 2rpx solid #d6d6d6;
+    border-radius: 6px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+.tips {
+    margin-top: 30rpx;
+    margin-bottom: 10rpx;
+}
+
+.qrCodeImg {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+购买须知
+ */
+
+.serviceNotice {
+    margin: 40rpx 20rpx 40rpx 20rpx;
+    width: 710rpx;
+    height: auto;
+}
+
+.tab {
+    width: 706rpx;
+    height: 80rpx;
+    background: #fff;
+    font-size: 30rpx;
+    color: #f6186a;
+    line-height: 80rpx;
+    font-weight: 500;
+    display: flex;
+    border: 2rpx solid #f6186a;
+    -moz-border-radius: 10rpx 10rpx 0 0;
+    -webkit-border-radius: 10rpx 10rpx 0 0;
+    border-radius: 10rpx 10rpx 0 0;
+}
+
+.tabLeft, .tabRight {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+.tabContent {
+    width: 100%;
+    background: #fff;
+  
+}
+.tabContent .box{
+    width: 100%;
+    background: #fff;
+    padding-top: 40rpx;
+    box-sizing: border-box;
+  
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx 120rpx 20rpx 120rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.itemContent {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    color: #131313;
+}
+
+.noticeContent {
+    width: 100%;
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+}
+
+.noticeContent .title {
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 2rpx solid #f4f4f4;
+}
+
+.noticeItem {
+    padding:0 40rpx 40rpx 40rpx;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticeItemContent .top {
+    font-size: 30rpx;
+    color: #131313;
+    margin-bottom: 20rpx;
+}
+
+.noticeItemContent .bottom {
+    font-size: 26rpx;
+    color: #858585;
+}
+
+.active {
+    background: #f6186a;
+    color: #fff;
+}
+
+/* 
+ 订单信息
+  */
+
+.orderInfo {
+    width: 100%;
+    height: 310rpx;
+    padding: 20rpx 20rpx 40rpx 20rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.price {
+    font-size: 30rpx;
+    color: #131313;
+    margin-bottom: 24rpx;
+}
+
+.number {
+    font-size: 26rpx;
+    color: #858585;
+    margin-bottom: 20rpx;
+}
+
+.number text:nth-of-type(2) {
+    color: #131313;
+}

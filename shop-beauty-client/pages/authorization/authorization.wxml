@@ -1,0 +1,13 @@
+<!--pages/authorization/authorization.wxml-->
+<view class='payRes' wx:if='{{isAuthSetting  && share == false}}'>
+    <image src='{{shopInfo.logo}}' class='icon-success'></image>
+    <view class='title'>{{shopInfo.name}}</view>
+    <view class='tip'>为了让您体验更好的服务，我们需要您进行微信授权。</view>
+    <button class='btn' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>微信授权</button>
+</view>
+<view class='payRes' wx:if='{{isAuthSetting && share == true}}'>
+    <image src='{{shopInfo.logo}}' class='icon-success'></image>
+    <view class='title'>{{shopInfo.name}}</view>
+    <view class='tip'>为了让您体验更好的服务，我们需要您进行微信授权。</view>
+    <button class='btn' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>微信授权</button>
+</view>

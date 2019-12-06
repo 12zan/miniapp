@@ -1,0 +1,7 @@
+<!--pages/QrCodeInvalid/QrCodeInvalid.wxml-->
+<view class='result'>
+<image src='../../images/fail.png' class='icon-success'></image>
+<view class='title'>二维码已失效</view>
+<view class='tip'>二维码已失效，请让用户刷新后重新扫码！</view>
+</view>
+<button class='btn' bindtap='toScaven'>重新扫描二维码</button>

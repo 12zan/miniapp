@@ -1,0 +1,24 @@
+{
+    "extEnable": true,
+    "extAppid": "wxe6cc86baa5fed7f5",
+    "directCommit": false,
+    "ext": {
+        "name": "cy",
+        "domain": "https://beauty.z.12zan.net" ,
+        "sid": "b45f00942fc62d6fb44732e",
+        "appId": "wxe6cc86baa5fed7f5",
+        "themeColor": "#D34343",
+        "tabBar": {
+            "mine": true,
+            "classify": true,
+            "contact": true,
+            "share": false
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "美业小程序",
+        "navigationBarTextStyle": "black"
+    }
+}

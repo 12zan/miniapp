@@ -1,0 +1,143 @@
+/* pages/rechargeRes/rechargeRes.wxss */
+
+page {
+    background: #f3f3f3;
+}
+
+.payRes {
+    width: 100%;
+    text-align: center;
+    margin-top: 140rpx;
+}
+
+.icon-success {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.title {
+    margin-top: 20rpx;
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.tip {
+    font-size: 13px;
+    margin-top: 20rpx;
+    color: #858585;
+}
+
+.btn {
+    width: 412rpx;
+    height: 100rpx;
+    background: #f6186a;
+    border-radius: 4rpx;
+    margin-top: 80rpx;
+    color: #fff;
+    font-weight: 500;
+    line-height: 100rpx;
+}
+
+button::after {
+    border: none;
+}
+
+.activity {
+    margin-top: 64rpx;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.activity {
+    padding: 20rpx 40rpx 20rpx 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+
+.stage {
+    font-size: 30rpx;
+    color: #131313;
+    margin-bottom: 20rpx;
+}
+
+.activityContent {
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.diff {
+    width: 522rpx;
+    height: 100%;
+    border: 2rpx solid #d6d6d6;
+    border-radius: 4rpx 4rpx 0 4rpx 4rpx;
+    border-right: none;
+    padding: 20rpx 38rpx 20rpx 20rpx;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.big {
+    width: 522rpx;
+    height: 100%;
+    border: 2rpx solid #d6d6d6;
+    border-radius: 4rpx 4rpx 0 4rpx 4rpx;
+    border-right: none;
+    padding: 20rpx 38rpx 20rpx 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small {
+    width: 150rpx;
+    height: 146rpx;
+    text-align: center;
+    border: 2rpx dashed #d6d6d6;
+    border-radius: 4rpx;
+    line-height: 150rpx;
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.picleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.priceright {
+    font-size: 34rpx;
+    color: #f6186a;
+    line-height: 110rpx;
+    font-weight: 500;
+}
+
+.pricebottom {
+    font-size: 34rpx;
+    color: #f6186a;
+    font-weight: 500;
+    margin-top: 16rpx;
+}
+
+.des {
+    font-size: 30rpx;
+    color: #2d2d2d;
+}
+
+.icon-recharge {
+    width: 110rpx;
+    height: 110rpx;
+    margin-right: 20rpx;
+}
+
+.notice {
+    font-size: 26rpx;
+    color: #858585;
+    margin-bottom: 40rpx;
+}

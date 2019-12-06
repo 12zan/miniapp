@@ -1,0 +1,40 @@
+<!--pages/businessBuckle/businessBuckle.wxml-->
+<view class='category'>
+    <view class='left'>
+        <image src='{{buckleData.userInfo.wx_user.avatar}}' class='categoryImg'></image>
+    </view>
+    <view class='right'>
+        <view class='info'>
+            <view class='top'>
+                <view>{{buckleData.userInfo.wx_user.nickname}}</view>
+                <view wx:if='{{buckleData.userInfo.level == 0}}' class='noVip'>非会员</view>
+                <image wx:if='{{buckleData.userInfo.level != 0}}' src='../../images/vip.png' class='icon-vip'></image>
+                <view wx:if='{{buckleData.userInfo.level != 0}}'>会员</view>
+
+                <view></view>
+            </view>
+            <view class='bottom'>
+                <view>ID: {{buckleData.userInfo.number}}</view>
+            </view>
+        </view>
+        <view class='recharge'>¥{{buckleData.userInfo.money}}</view>
+    </view>
+</view>
+
+<view class='buckle'>
+<view>请输入应付金额</view>
+<input type='digit'  value='{{money}}'  bindblur='bindblur'  bindinput='bindReplaceInput' placeholder='¥'></input>
+<view class='borders'></view>
+<view class='footer' bindtap='toPay' wx:if='{{isStatus == 2}}'>
+    <text>确认扣款</text>
+    <text> ¥{{money}}</text>
+</view>
+<view class='footer nothing'  wx:if='{{isStatus == 0}}'>
+   请先输入应付金额
+</view>
+<view class='footer nothing'  wx:if='{{isStatus == 1}}'>
+  扣款金额大于余额
+</view>
+</view>
+
+

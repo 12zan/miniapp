@@ -1,0 +1,15 @@
+<!--pages/reservationRes/reservationRes.wxml-->
+<!-- 扣款结果页 -->
+<view class='result' wx:if='{{isOk == 2}}'>
+    <image src='../../images/fail.png' class='icon-success'></image>
+    <view class='title'>扣款失败</view>
+    <view class='tip'>用户余额不足，请提醒用户充值！</view>
+    <button class='againBtn' bindtap='toScaven'>重新扫描二维码</button>
+    <button class='backBtn' bindtap='toBusiness'>返回</button>
+</view>
+<view class='result' wx:if='{{isOk == 1}}'>
+    <image src='../../images/right.png' class='icon-success'></image>
+    <view class='title'>扣款成功</view>
+    <view class='tip'>已扣款{{totalPrice}}元</view>
+    <button class='btn'  bindtap='toBusiness'>返回</button>
+</view>

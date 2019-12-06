@@ -1,0 +1,62 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/businessBuckle/businessBuckle",
+        "pages/appointment/appointment",
+        "pages/rechargeRes/rechargeRes",
+        "pages/scavenging/scavenging",
+        "pages/authorization/authorization",
+        "pages/hairStylist/hairStylist",
+        "pages/jurisdiction/jurisdiction",
+        "pages/my/my",
+        "pages/buckle/buckle",
+        "pages/business/business",
+        "pages/businessPay/businessPay",
+        "pages/balanceList/balanceList",
+        "pages/qrCode/qrCode",
+        "pages/recharge/recharge",
+        "pages/order/order",
+        "pages/orderDetails/orderDetails",
+        "pages/settlement/settlement",
+        "pages/serviceDetails/serviceDetails",
+        "pages/reservationRes/reservationRes",
+        "pages/pay/pay",
+        "pages/balanceDetails/balanceDetails",
+        "pages/verificationRes/verificationRes",
+        "pages/userBuckleRes/userBuckleRes",
+        "pages/qrCodeInvalid/qrCodeInvalid",
+        "pages/map/map"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#858585",
+        "selectedColor": "#F6186A",
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "images/home2.png",
+                "iconPath": "images/home1.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/order2.png",
+                "iconPath": "images/order1.png",
+                "pagePath": "pages/order/order",
+                "text": "订单"
+            },
+            {
+                "selectedIconPath": "images/me2.png",
+                "iconPath": "images/me1.png",
+                "pagePath": "pages/my/my",
+                "text": "我的"
+            }
+        ]
+    }
+}

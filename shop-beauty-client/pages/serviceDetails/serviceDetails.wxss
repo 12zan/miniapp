@@ -1,0 +1,210 @@
+/* pages/serviceDetails/serviceDetails.wxss */
+
+/* 轮播图 */
+page{
+    background: #f3f3f3;
+}
+.swiper {
+    width: 100%;
+    height: 596rpx;
+    background: #fff;
+}
+.swiper-item {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    width: 100%;
+    /* height: 238rpx; */
+    padding: 26rpx 40rpx 38rpx 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+    /* margin-top: 20rpx; */
+}
+
+.info .name {
+    font-size: 34rpx;
+    color: #131313;
+    margin-bottom: 20rpx;
+}
+
+.info .des {
+    font-size: 24rpx;
+    color: #858585;
+    margin-bottom: 30rpx;
+}
+
+.info .price {
+    display: flex;
+    font-size: 24rpx;
+    color: #858585;
+    line-height: 24rpx;
+}
+
+.info .price view:nth-of-type(1) {
+    font-size: 34rpx;
+    color: #f6186a;
+    margin-right: 20rpx;
+    font-weight: 500;
+}
+
+.interval {
+    width: 100%;
+    height: 20rpx;
+    background: #eee;
+}
+
+.serviceContent {
+    width: 100%;
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: 20rpx;
+}
+
+.serviceContent .title {
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 2rpx solid #f4f4f4;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx 80rpx 20rpx 80rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.itemContent {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    color: #131313;
+}
+
+.noticeContent {
+    width: 100%;
+    padding: 0 40rpx 0 40rpx;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: 20rpx;
+   
+}
+
+.noticeContent .title {
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 2rpx solid #f4f4f4;
+     margin-bottom: 40rpx;
+}
+.paddingBottom{
+     padding-bottom: 98rpx;
+}
+.noticeItem {
+    padding: 0 0  40rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-bottom: 40rpx; */
+}
+
+.noticeItemContent .top {
+    font-size: 30rpx;
+    color: #131313;
+    margin-bottom: 20rpx;
+}
+
+.noticeItemContent .bottom {
+    font-size: 26rpx;
+    color: #858585;
+}
+
+.serviceInstroduce {
+   
+    background: #fff;
+    margin-top: 20rpx;
+}
+
+.serviceInstroduce .title {
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    padding-left: 40rpx;
+    box-sizing: border-box;
+    font-size: 34rpx;
+    color: #131313;
+    font-weight: 500;
+}
+
+.images {
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    
+  
+}
+
+.pictrues {
+    width: 100%;
+    display:block;
+    vertical-align:top;
+    /* height:100%; */
+ 
+}
+
+.footer {
+    width: 100%;
+    height: 98rpx;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 -2rpx 12rpx 0 rgba(0, 0, 0, 0.15);
+}
+
+.index {
+    width: 218rpx;
+    height: 100%;
+    font-size: 20rpx;
+    color: #f6186a;
+    text-align: center;
+    padding: 10rpx 0 10rpx 0;
+    box-sizing: border-box;
+}
+
+.icon-home {
+    width: 46rpx;
+    height: 46rpx;
+}
+
+.buy {
+    width: 534rpx;
+    height: 100%;
+    background: #f6186a;
+    font-size: 30rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 98rpx;
+    border: none;
+    border-radius: 0;
+    font-weight: 500;
+}
+button::after{
+      border: none;
+    border-radius: 0;
+}

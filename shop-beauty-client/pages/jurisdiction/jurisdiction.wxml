@@ -1,0 +1,7 @@
+<!--pages/jurisdiction/jurisdiction.wxml-->
+<view class='res'>
+<image src='../../images/error.png' class='icon-error'></image>
+<view class='notice'>操作错误</view>
+<view>您未获取扫码权限</view>
+</view>
+<button class='toBack' bindtap='toBusiness'>返回</button>

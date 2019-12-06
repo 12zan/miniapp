@@ -1,0 +1,25 @@
+<!--pages/balanceDetails/balanceDetails.wxml-->
+<view class='big'>
+    <view class='title'>
+        <text wx:if='{{balanceDetails.type == "out"}}'>出账金额</text>
+         <text wx:if='{{balanceDetails.type == "in"}}'>入账金额</text>
+        <text class='{{balanceDetails.type == "out" ? "out" : "in"}}'>{{money}}</text>
+    </view>
+    <view class='item'>
+        <text>类型</text>
+        <text wx:if='{{balanceDetails.type == "out"}}'>支出</text>
+        <text wx:if='{{balanceDetails.type == "in"}}'>收入</text>
+    </view>
+    <view class='item'>
+        <text>时间</text>
+        <text>{{balanceDetails.created_at}}</text>
+    </view>
+    <view class='item'>
+        <text>余额</text>
+        <text>{{dist_money}}</text>
+    </view>
+    <view class='remarks'>
+        <view>备注</view>
+        <view>{{balanceDetails.remark}}</view>
+    </view>
+</view>

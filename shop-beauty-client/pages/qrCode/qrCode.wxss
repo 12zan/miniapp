@@ -1,0 +1,60 @@
+/* pages/qrCode/qrCode.wxss */
+
+page {
+    background: #f3f3f3;
+}
+
+.qrCode {
+    margin: 40rpx 40rpx 0 40rpx;
+    width: 670rpx;
+    height: 780rpx;
+    padding: 30rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+    font-size: 26rpx;
+    color: #858585;
+}
+
+.qrCode .tips {
+    font-size: 30rpx;
+    color: #131313;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+
+.notice {
+    margin-bottom: 100rpx;
+}
+
+.qrImg {
+    width: 380rpx;
+    height: 380rpx;
+    margin: 0 auto;
+    border: 2rpx solid #d6d6d6;
+    border-radius: 6px;
+}
+
+text {
+    color: #00d492;
+}
+
+.last {
+    text-align: center;
+    margin-top: 40rpx;
+}
+
+.backBtn {
+    margin-top: 100rpx;
+    width: 410rpx;
+    height: 100rpx;
+    background: #f6186a;
+    border-radius: 4rpx;
+    font-size: 34rpx;
+    color: #fff;
+    line-height: 100rpx;
+    text-align: center;
+    font-weight: 500;
+}
+button::after{
+    border: none;
+    /* border-radius: 0; */
+}
