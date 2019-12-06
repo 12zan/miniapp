@@ -1,5 +1,5 @@
 <!--pages/qrCode/qrCode.wxml-->
-<view class='qrCode' style="background-image: url('https://yuanli-public.oss-cn-beijing.aliyuncs.com/shop%2FcodeBg.png'); background-size: 100% 100%">
+<view class='qrCode' style="background-image: url('https://cdn.withpush.cn/shop%2FcodeBg.png'); background-size: 100% 100%">
 <view class='tips'>二维码说明</view>
 <view class='notice'>请将您的二维码展示给店员以完成扣款操作，为保障您的资金安全，请勿将您的二维码转发给他人。</view>
 <view class='qrImg' style="background-image: url({{qrCode}});background-size: 100% 100%" bindtap='toRefresh'></view>

@@ -6,8 +6,8 @@
 2. 接下来，我会把十二赞旗下的全部小程序的源代码整理、开放出来。陆陆续续整理中。
 3. 有时候因为要删掉一些敏感信息，保障现在十二赞的客户的信息安全，所以进展会慢一点，请大家耐心等待。也有可能删的内容影响到了现有小程序的运行，需要自己修改一下，请多多理解。
 4. 目前十二赞已经实现了比较先进的一些东西，比如代码自动集成、docker自动发布、服务发现、服务器扩容， 这里的开放源码已经包含了后端的一些工具库、运维平台等等。
-4. 大家有问题可以加我微信或QQ:55547082 ,有空的话我会回复一些问题，但是可能杂事繁多，无法一一回复，请见谅。![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/50635100.jpg](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/6464800.jpg)
-5. 我开放了一个知识星球来回复这些问题，这样已经有人提过的问题，大家就直接能看到了，欢迎大家加入。![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/50635100.jpg]()
+4. 大家有问题可以加我微信或QQ:55547082 ,有空的话我会回复一些问题，但是可能杂事繁多，无法一一回复，请见谅。![https://upshare.withpush.cn/201912/50635100.jpg](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/6464800.jpg)
+5. 我开放了一个知识星球来回复这些问题，这样已经有人提过的问题，大家就直接能看到了，欢迎大家加入。![https://upshare.withpush.cn/201912/50635100.jpg]()
 
 
 
@@ -54,33 +54,33 @@
 
 1. 助力抽奖
 
-![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/47090800.8654.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/47090800.8654.png)
-![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/26057000.8998.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/26057000.8998.png)
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4821.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4821.PNG)
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4822.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4822.PNG)
+![https://upshare.withpush.cn/201912/47090800.8654.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/47090800.8654.png)
+![https://upshare.withpush.cn/201912/26057000.8998.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/26057000.8998.png)
+![https://cdn.withpush.cn/opensource/IMG_4821.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4821.PNG)
+![https://cdn.withpush.cn/opensource/IMG_4822.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4822.PNG)
 
 
 2. 生成分享图
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4818.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4818.PNG)
+![https://cdn.withpush.cn/opensource/IMG_4818.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4818.PNG)
 
 3.扫码买单
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4820.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4820.PNG)
+![https://cdn.withpush.cn/opensource/IMG_4820.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4820.PNG)
 
 4. 拼团
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4817.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4817.PNG)
+![https://cdn.withpush.cn/opensource/IMG_4817.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4817.PNG)
 
 5.限时折扣
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4815.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4815.PNG)
+![https://cdn.withpush.cn/opensource/IMG_4815.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4815.PNG)
 
 6.积分
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4814.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4814.PNG)
+![https://cdn.withpush.cn/opensource/IMG_4814.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4814.PNG)
 
 7. 裂变红包
-![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4813.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4813.PNG)
+![https://cdn.withpush.cn/opensource/IMG_4813.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://cdn.withpush.cn/opensource/IMG_4813.PNG)
 
 8. 返利
-- ![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/13969000.9229.png]()
-- ![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/41076800.4477.png]()
+- ![https://upshare.withpush.cn/201912/13969000.9229.png]()
+- ![https://upshare.withpush.cn/201912/41076800.4477.png]()
 
 # 部署说明
 
