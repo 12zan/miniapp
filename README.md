@@ -6,13 +6,83 @@
 大家有问题可以加我微信或QQ:55547082 ,有空的话我会回复一些问题，但是可能杂事繁多，无法一一回复，请见谅。
 我开放了一个知识星球来回复这些问题，这样已经有人提过的问题，大家就直接能看到了，欢迎大家加入。
 
-# 示例小程序预览
+
+
+
 
 # 小程序功能列表
 
+### 基础模块
+
+- 商品基础信息管理
+- 分类管理
+- 商品分组管理
+- 自定义装修管理
+- 运费模板管理
+- 电子面单支持
+- 小程序版本管理等等
+- 子帐号管理
+
+### 营销相关
+
+- 积分
+- 返利
+- 优惠券
+- 限时折扣
+- 新人红包
+- 裂变红包
+- 0元购
+- 拼团
+- 抽奖
+- 助力抽奖
+- 扫码买单
+- 运费优惠（包邮策略）
+- 储值活动
+- 评价活动
+- 供应商管理
+
+# 使用中的小程序（真实客户）预览
+
+目前各个品类有近千客户。包括绿城集团、爱尔眼科、部分天猫店、餐饮、商场、实业、学校及医院食堂、花店、上市公司等。
+
+
+
+###  部分界面截图
+
+1. 助力抽奖
+
+![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/47090800.8654.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/47090800.8654.png)
+![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/26057000.8998.png?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/26057000.8998.png)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4821.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4821.PNG)
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4822.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4822.PNG)
+
+
+2. 生成分享图
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4818.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4818.PNG)
+
+3.扫码买单
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4820.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4820.PNG)
+
+4. 拼团
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4817.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4817.PNG)
+
+5.限时折扣
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4815.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4815.PNG)
+
+6.积分
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4814.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4814.PNG)
+
+7. 裂变红包
+![https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4813.PNG?x-oss-process=image/resize,m_fill,w_750,h_600,limit_0/auto-orient,1/quality,q_84](https://yuanli-public.oss-cn-beijing.aliyuncs.com/opensource/IMG_4813.PNG)
+
+8. 返利
+- ![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/13969000.9229.png]()
+- ![https://ylpicture.oss-cn-beijing.aliyuncs.com/201912/41076800.4477.png]()
+
 # 部署说明
+
 1. 十二赞的后端代码，如果是基于php下laravel的，数据库的建立和字段修改是通过migration来实现的，即运行php artisan migrate 即可自动完成建表、初始化数据等操作。
-2. 
+2. Java版的程序基本是基于spring-boot的，打包成jar包，直接运行，会自动建表。
 
 # 运维相关的基础组件介绍
 十二赞依赖了一些像缓存、队列等基础组件。以下是相关的基础组件的源代码或是Docker配置。
